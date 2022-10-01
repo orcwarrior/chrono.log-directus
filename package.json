@@ -1,0 +1,23 @@
+{
+  "name": "chrono.log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "directus:start": "directus start",
+    "directus:schema:export": "directus schema snapshot ./directus.snapshot.yaml",
+    "directus:schema:import": "directus schema apply ./directus.snapshot.yaml",
+    "directus:gen:types": "directus-typescript-gen --host http://127.0.0.1:8055 --email admin@chrono.log.com --password \"pwd\" --typeName Chronolog --outFile api/src/chronolog-collections.d.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "directus": "^9.18.1",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "directus": "^9.18.1",
+    "directus-typescript-gen": "^0.2.1"
+  }
+}
