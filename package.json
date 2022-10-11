@@ -7,7 +7,9 @@
     "directus:start": "directus start",
     "directus:schema:export": "directus schema snapshot ./directus.snapshot.yaml",
     "directus:schema:import": "directus schema apply ./directus.snapshot.yaml",
-    "directus:gen:types": "directus-typescript-gen --host http://127.0.0.1:8055 --email admin@chrono.log.com --password \"pwd\" --typeName Chronolog --outFile api/src/chronolog-collections.d.ts"
+    "directus:gen:types": "directus-typescript-gen --host http://127.0.0.1:8055 --email admin@chrono.log.com --password \"pwd\" --typeName Chronolog --outFile api/src/chronolog-collections.d.ts",
+    "db:dump":"docker exec database pg_dump -U postgres -F tar chrono_log > data/db-dump/dump.tar",
+    "db:restore":"docker exec database pg_restore -U postgres -c -d chrono_log /db-dump/dump.tar"
   },
   "keywords": [],
   "author": "",
