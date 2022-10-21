@@ -1,0 +1,50 @@
+{
+	"name": "directus-extension-react-boilerplate",
+	"version": "1.0.0",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-custom-module"
+	],
+	"directus:extension": {
+		"type": "module",
+		"path": "dist/index.js",
+		"source": "src/index.ts",
+		"host": "^9.18.1"
+	},
+	"scripts": {
+		"build": "directus-extension build",
+		"dev": "directus-extension build -w --no-minify"
+	},
+	"devDependencies": {
+		"@babel/cli": "7.4.3",
+		"@babel/core": "7.4.3",
+		"@babel/plugin-proposal-class-properties": "7.4.0",
+		"@babel/plugin-syntax-dynamic-import": "7.2.0",
+		"@babel/plugin-transform-modules-commonjs": "7.4.3",
+		"@babel/plugin-transform-react-constant-elements": "7.2.0",
+		"@babel/plugin-transform-react-inline-elements": "7.2.0",
+		"@babel/preset-env": "7.4.3",
+		"@babel/preset-react": "7.0.0",
+		"@babel/register": "7.4.0",
+		"@directus/extensions-sdk": "9.18.1",
+		"@types/react": "16.14.1",
+		"@types/react-dom": "16.9.16",
+		"babel-core": "7.0.0-bridge.0",
+		"babel-eslint": "10.0.1",
+		"babel-loader": "8.0.5",
+		"babel-plugin-dynamic-import-node": "2.2.0",
+		"babel-plugin-lodash": "3.3.4",
+		"babel-plugin-react-intl": "3.0.1",
+		"babel-plugin-styled-components": "1.10.0",
+		"babel-plugin-transform-react-remove-prop-types": "0.4.24",
+		"rollup-plugin-typescript": "^1.0.1",
+		"typescript": "^4.8.4",
+		"vue": "^3.2.40"
+	},
+	"dependencies": {
+		"@babel/polyfill": "7.4.3",
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0"
+	}
+}
