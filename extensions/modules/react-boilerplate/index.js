@@ -1,2 +1,2 @@
-import example from "./dist/index"
-export default example;
+import reactBoilerplate from "./dist/index"
+export default {};

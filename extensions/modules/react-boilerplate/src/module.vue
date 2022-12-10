@@ -1,6 +1,6 @@
 <template>
 
-  <private-view title="Directus: GraphiQL">
+  <private-view title="React: Boilerplate">
     <div ref="react"></div>
   </private-view>
 </template>

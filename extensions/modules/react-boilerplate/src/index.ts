@@ -2,10 +2,10 @@ import { defineModule } from '@directus/extensions-sdk';
 import ModuleComponent from './module.vue';
 
 export default defineModule({
-	id: 'graphiql',
+	id: 'react-boilerplate',
 	name: 'React: boilerplate',
 	description: 'React boilerplate for directus-vue',
-	icon: 'potted_plant',
+	icon: 'help',
 	routes: [
 		{
 			path: '',
