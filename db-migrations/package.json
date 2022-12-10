@@ -1,0 +1,15 @@
+{
+  "name": "db-migrations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dbdiff:up": "docker-compose up --no-start",
+    "dbdiff": "docker-compose exec dbdiff ./dbdiff --type=schema --server1 pwd:postgres@host.docker.internal --server2 pwd:postgres@host.docker.internal --include=all server1.chrono_log_snapshot:server2:chrono_log"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pg-diff-cli": "^2.4.1"
+  }
+}

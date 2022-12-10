@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dbdiff:
+    container_name: dbdiff
+    image: kazsakai/dbdiff
+    volumes:
+      - ./dbdiff/:/dbdiff/migration.sql
+    command: sleep infinity
+
+networks:
+  db-migrations:
