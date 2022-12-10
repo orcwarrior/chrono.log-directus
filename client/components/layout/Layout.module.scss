@@ -1,0 +1,31 @@
+.layoutWrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: stretch;
+  background-color: var(--nextui-colors-gray100);
+}
+
+.layout {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: var(--nextui-space-10);
+  //opacity: 0.2;
+  background-color: rgba(var(--nextui-colors-gray100), 1);
+  // https://gist.github.com/JoeyBurzynski/617fb6201335779f8424ad9528b72c41
+  max-width: 70ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+
+.bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

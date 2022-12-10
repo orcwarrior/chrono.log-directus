@@ -1,7 +1,7 @@
 import React from "react";
-import {Text} from "@nextui-org/react";
 import Layout from "~/components/layout/layout";
 import Head from "next/head";
+import {CalendarViewport} from "~/components/home/CalendarViewport/CalendarViewport";
 
 const Index = () => {
     return (
@@ -9,9 +9,7 @@ const Index = () => {
             <Head>
                 <title>Chrono.log - Home</title>
             </Head>
-            <Text h1>
-                This is content for Home
-            </Text>
+            <CalendarViewport />
         </Layout>
     );
 };

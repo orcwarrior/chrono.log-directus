@@ -1,5 +1,6 @@
 import React from "react";
 import {useTheme} from "next-themes";
+import {Navbar} from "@nextui-org/react";
 import {Switch, SwitchEvent} from "@nextui-org/react";
 import dynamic from "next/dynamic";
 
@@ -17,8 +18,9 @@ const _NavThemeSelector = () => {
     console.log(`currentTheme: `, currentTheme);
 
     return (
-
-        <span>Theme <Switch checked={isDarkTheme} onChange={onThemeChange} />{currentTheme}</span>
+        <div>
+            <span>Theme <Switch checked={isDarkTheme} onChange={onThemeChange} />{currentTheme}</span>
+        </div>
     );
 };
 

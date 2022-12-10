@@ -1,5 +1,6 @@
 import {ReactNode} from "react";
-import {Navbar} from "~/components/layout/Navbar";
+import styles from "./Layout.module.scss";
+import {Background} from "~/components/layout/Background";
 
 interface Props {
     children: ReactNode;
@@ -7,10 +8,15 @@ interface Props {
 
 const RootLayout = ({children}: Props) => {
     return (
-        <>
-            <Navbar />
-            {children}
-        </>
+        <div className={styles.layoutWrapper}>
+            <div className={styles.bg}>
+                <Background />
+            </div>
+            <div className={styles.layout}>
+                {/*<Navbar />*/}
+                {children}
+            </div>
+        </div>
     );
 };
 export default RootLayout;
